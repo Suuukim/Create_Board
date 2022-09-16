@@ -15,7 +15,7 @@
 </head>
 <body>
 <%
-	MyUser sana = new MyUser("이사나",24,"서울시 강남구 역삼동");
+	MyUser sana = new MyUser("이사나",24,"서울시 강남구 역삼동");		//데이터 객체 생성
 %>
 	<table style="width:70%;margin:auto;border-collapse: collapse;">
 		<tr>
@@ -24,7 +24,7 @@
 			<th>거주지</th>
 		</tr>
 		
-		<tr> 
+		<tr> <!-- MyUser 타입 객체의 데이터를 출력 -->
 			<td><%=sana.getName() %></td>
 			<td><%=sana.getAge() %></td>
 			<td><%=sana.getAddress() %></td>
