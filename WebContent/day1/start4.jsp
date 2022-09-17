@@ -34,6 +34,7 @@
 			<th>이름</th>
 			<th>나이</th>
 			<th>거주지</th>
+			<th>비고<th>
 		</tr>
 		<!-- 아래의 1행 한명의 MyUser 객체 출력을 list 크기만큼 반복합니다. -->
 	<%
@@ -45,6 +46,11 @@
 			<%-- <td><%=list.get(i).getName() %></td> --%>		<!-- 표현식을 포함하는 주 석기호는 다름. -->
 			<td><%=user.getAge() %></td>
 			<td><%=user.getAddress() %></td>
+			<td>
+				<%
+					if(user.getAge()<20) out.print("청소년");
+				%>
+			</td>
 		</tr>
 		
 	<%
